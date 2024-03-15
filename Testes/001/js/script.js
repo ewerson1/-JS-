@@ -20,19 +20,19 @@ console.log(marca2.toLocaleLowerCase());
 
 console.log("_________________________");
 
-let individo = {
+let indevido = {
   name: "jurubeba",
   profissao: "engine",
   idade: "29",
 };
 
-delete individo.idade;
-console.log(individo.name);
-console.log(individo.idade);
-console.log(individo.profissao);
+delete indevido.idade;
+console.log(indevido.name);
+console.log(indevido.idade);
+console.log(indevido.profissao);
 
-individo.sobrenome = true;
-console.log(individo.sobrenome);
+indevido.sobrenome = true;
+console.log(indevido.sobrenome);
 
 console.log("_________________________");
 
@@ -55,3 +55,23 @@ Object.assign(carrinho, adicionais);
 Object.assign(adicionais, carrinho);
 
 console.log("_________________________");
+// metodo key
+
+console.log(Object.keys(carrinho));
+
+let objctA = {
+  pontos: 10,
+};
+
+objctB = objctA;
+
+let objctC = {
+  pontos: 11,
+};
+
+console.log(objctA == objctB);
+console.log(objctA == objctC);
+
+console.log("_________________________");
+
+// LOOP em Arrays
