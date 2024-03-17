@@ -87,13 +87,13 @@ console.log("");
 
 // 007;
 console.log("EXERCISE 07 ");
-// usando forEach
-let powerRangers = ["vermelho", "Azul", "Amarelo", "Roxo"];
+// using forEach
+let powerRangers = ["red", "Blue", "Yellow", "Roxo"];
 powerRangers.forEach((rangers) => {
   console.log("Power ranger: " + rangers);
 });
 console.log("");
-// fazendo com for
+// doing with for
 for (let i = 0; i < powerRangers.length; i++) {
   console.log(powerRangers[i]);
 }
@@ -119,7 +119,7 @@ console.log("");
 // 009;
 console.log("EXERCISE 9 ");
 
-const frase = "xerém com galinha depois com macarrão e arroz";
+const frase = "xerém with chicken then with pasta and rice";
 const fraseSeparada = frase.split(" ");
 console.log(frase.split(" "));
 for (let i = 0; i < fraseSeparada.length; i++) {
