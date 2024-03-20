@@ -13,4 +13,4 @@ let motoJSON = JSON.parse(moto);
 console.log(motoJSON);
 
 
-console.log(motoJSON.Motor);
+console.log(motoJSON.Motor); 
