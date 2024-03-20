@@ -41,3 +41,16 @@ console.log(coala);
 
 
 console.log("____________________");
+
+function Pizza(sabor,arroz) {
+  this.sabor = sabor;
+  this.arroz = arroz;
+}
+
+let frango = new Pizza ("frango com catupiry");
+let outro = new Pizza ("repolho")
+
+console.log(frango.arroz)
+console.log(frango.sabor)
+
+console.log("____________________");
