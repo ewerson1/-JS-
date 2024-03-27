@@ -158,6 +158,19 @@ class gato extends Mamifero {
   }
 }
 
-let camomila = new gato(12, "chi auau")
+let camomila = new gato(12, "chi auau");
+
 console.log(camomila.patas, camomila.raca);
 
+camomila.mia();
+
+// istanceof
+
+console.log(new gato instanceof Mamifero);
+console.log(camomila instanceof Mamifero);
+
+// 
+
+class Pessoa {
+  le
+}
