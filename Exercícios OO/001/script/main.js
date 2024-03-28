@@ -1,26 +1,25 @@
 class Inter {
+  total = 0;
   constructor(saldo) {
-    this.saldo = saldo;
+    this.total = saldo;
   }
 
   deposito(valor) {
-    this.saldo += valor;
-    return this.saldo;
+    this.total += valor;
   }
 
   saque(valor) {
-    this.saldo -= valor;
-    return this.saldo;
+    this.total -= valor;
   }
 
-
+  verTotal() {
+    console.log(this.total);
+  }
 }
 
-let conta = new Inter(2000);
-console.log("saldo inicial ", conta.saldo);
+let conta = new Inter(0);
 
-conta.deposito(200);
-console.log("seu saldo agora é ", conta.saldo);
-
-conta.saque(1230);
-console.log("seu saldo agora é ", conta.saldo)
+conta.deposito(40);
+conta.verTotal();
+conta.saque(60);
+conta.verTotal();
