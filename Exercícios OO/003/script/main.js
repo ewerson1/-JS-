@@ -44,6 +44,6 @@ let endereco = new Endereco(
 endereco.attRua = "bela";
 endereco.attBairro = "san"
 endereco.attCidade = "Brumadinho"
-console.log(endereco.getRua);
+console.log(endereco);
 console.log(endereco.getBairro);
 console.log(endereco.getCidade)
