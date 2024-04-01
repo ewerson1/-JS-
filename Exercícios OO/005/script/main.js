@@ -29,7 +29,7 @@ class ContaBancaria {
     if (valor > 0 && this.saldoPoupanca > 0) {
       this.saldoPoupanca -= valor;
       this.saldoCorrente += valor;
-      console.log("\ntransferencia de R$",valor, "dconcluída");
+      console.log("\ntransferencia de R$",valor, "Para conta corrente concluída!");
     } else
       console.log(
         "Erro: Transferência não realizada. Saldo insuficiente na conta poupança."
@@ -52,10 +52,10 @@ evisuConta.transferencia(100);
 
 
 console.log(
-  "Saldo na conta corrente normal desse peste é R$",
-  evisuConta.saldoCorrente,
-  "\ne o na poupança normal é de R$",
+  "Agora o saldo de evisu na conta poupança é R$",
   evisuConta.saldoPoupanca,
+  "\ne o saldo desse misera na conta corrente é R$",
+  evisuConta.saldoCorrente,
 );
 
 
@@ -64,6 +64,6 @@ evisuEspecial.depositoPoupanca(1000);
 evisuEspecial.depositoCorrente(10);
 evisuEspecial.transferencia(100);
 
-console.log(`saldo de evisu na conta poupança R$`, evisuEspecial.saldoPoupanca, 
+console.log("Agora o saldo de evisu na conta poupança é R$", evisuEspecial.saldoPoupanca, 
 "\ne o saldo desse misera na conta corrente é R$", evisuEspecial.saldoCorrente,
 );
