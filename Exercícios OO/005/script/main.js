@@ -47,7 +47,7 @@ let evisuEspecial = new ContaEspecial();
 let evisuConta = new ContaBancaria();
 
 evisuConta.depositoPoupanca(1000);
-evisuConta.depositoCorrente(100);
+evisuConta.depositoCorrente(0);
 evisuConta.transferencia(100);
 
 
@@ -60,8 +60,8 @@ console.log(
 
 
 // conta especial
-evisuEspecial.depositoPoupanca(1000);
-evisuEspecial.depositoCorrente(10);
+evisuEspecial.depositoPoupanca(120);
+evisuEspecial.depositoCorrente(0);
 evisuEspecial.transferencia(100);
 
 console.log("Agora o saldo de evisu na conta poupança é R$", evisuEspecial.saldoPoupanca, 
