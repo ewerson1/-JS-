@@ -35,6 +35,8 @@ class ContaBancaria {
         "Erro: Transferência não realizada. Saldo insuficiente na conta poupança."
       );
   }
+
+  
 }
 class ContaEspecial extends ContaBancaria {
   constructor(saldoCorrente = 0, saldoPoupanca = 0, jurosPoupanca = 0) {
@@ -60,7 +62,7 @@ console.log(
 
 
 // conta especial
-evisuEspecial.depositoPoupanca(120);
+evisuEspecial.depositoPoupanca(1620);
 evisuEspecial.depositoCorrente(0);
 evisuEspecial.transferencia(100);
 
