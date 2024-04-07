@@ -1,52 +1,52 @@
-class ContaBancaria {
-  constructor(saldoCorrente = 0, saldoPoupanca = 0, ) {
+class bankAccount {
+  constructor(saldoCorrente = 0, balanceP = 0, ) {
     this.saldoCorrente = saldoCorrente;
-    this.saldoPoupanca = saldoPoupanca;
+    this.balanceP = balanceP;
    
   }
 
-  depositoCorrente(valor) {
-    this.saldoCorrente += valor;
+  depositoCorrente(value) {
+    this.saldoCorrente += value;
   }
 
-  saqueCorrente(valor) {
-    this.saldoCorrente -= valor;
+  saqueCorrente(value) {
+    this.saldoCorrente -= value;
   }
 
-  depositoPoupanca(valor) {
-    this.saldoPoupanca += valor;
+  depositoPoupanca(value) {
+    this.balanceP += value;
   }
 
-  saquePoupanca(valor) {
-    this.saldoPoupanca -= valor;
+  saquePoupanca(value) {
+    this.balanceP -= value;
   }
 
-  transferencia(valor) {
-    if (valor > 0 && this.saldoPoupanca > 0) {
-      this.saldoPoupanca -= valor;
-      this.saldoCorrente += valor;
+  transferencia(value) {
+    if (value > 0 && this.balanceP > 0) {
+      this.balanceP -= value;
+      this.saldoCorrente += value;
       console.log(
-        "\ntransferencia de R$",
-        valor,
-        "Para conta corrente concluída!"
+        "\ntransfer of R$",
+        value,
+        "for current account completed!"
       );
     } else
       console.log(
-        "Erro: Transferência não realizada. Saldo insuficiente na conta poupança."
+        "Erro: Transfer not carried out. Insufficient balance in savings account."
       );
   }
 
   
 }
-class ContaEspecial extends ContaBancaria {
-  constructor(saldoCorrente = 0, saldoPoupanca = 0) {
-    super(saldoCorrente, saldoPoupanca, );
+class ContaEspecial extends bankAccount {
+  constructor(saldoCorrente = 0, balanceP = 0) {
+    super(saldoCorrente, balanceP, );
   }
 }
 
 let evisuEspecial = new ContaEspecial(1000, 5000);
 
-let evisuConta = new ContaBancaria();
+let evisuConta = new bankAccount();
 
 // conta normal
 evisuConta.depositoPoupanca(1000);
@@ -55,7 +55,7 @@ evisuConta.transferencia(100);
 
 console.log(
   "Agora o saldo desse jumento na conta poupança é R$",
-  evisuConta.saldoPoupanca,
+  evisuConta.balanceP,
   "\ne o saldo desse misera na conta corrente é R$",
   evisuConta.saldoCorrente
 );
@@ -67,7 +67,7 @@ evisuEspecial.transferencia(100);
 
 console.log(
   "Agora o saldo desse animal na conta poupança é R$",
-  evisuEspecial.saldoPoupanca,
+  evisuEspecial.balanceP,
   "\ne o saldo desse misera na conta corrente é R$",
   evisuEspecial.saldoCorrente
 );
