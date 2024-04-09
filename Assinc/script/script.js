@@ -12,7 +12,7 @@ console.log(pao);
 
 pao.then((value) => {console.log(`${value + 5}`)})
 
-await
+// await
 
 const somaComDelay = (a, b) => {
   return new Promise((resolve) => {
@@ -38,9 +38,9 @@ async function pegaDados() {
   const resultadoConvertido = await resultado.json();
   console.log(resultadoConvertido);
 }
-
 pegaDados();
 
+// ////
 async function teste() {
   console.log("testando 1... 2... 3..");
 }
@@ -50,3 +50,19 @@ teste();
 teste().then((resposta) => {
     console.log(resposta)
 })
+
+
+// 
+function* criadorId(){
+  let id = 0;
+  while(true){
+    yield id++
+  } 
+}
+
+let criarId = criadorId();
+
+console.log(criarId.next().value)
+console.log(criarId.next().value)
+console.log(criarId.next().value)
+console.log(criarId.next().value)
